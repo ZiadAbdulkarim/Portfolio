@@ -63,9 +63,7 @@
                 <h2 class="hero-title">Front-End Developer</h2>
                 <div class="hero-bio">
                     <!-- Shortened Bio -->
-                    <p>A recent IT graduate specializing in Front-End Development. Proficient in HTML, CSS, and
-                        JavaScript, with a strong focus on creating responsive, user-friendly designs. Passionate about
-                        building modern interfaces.</p>
+                    <p>Front-End Developer | Responsive Design</p>
                 </div>
                 <!-- Removed standard resume button here, moved to fixed position -->
                 <div class="social-links">
@@ -81,17 +79,70 @@
         <!-- Removed scroll down arrow -->
     </section>
 
+    <!-- About Section -->
+    <section id="about" class="section">
+        <i class="fa-solid fa-user bg-icon"></i>
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-container reveal">
+                <div class="about-main-text">
+                    <p>I'm Ziad Abdulkarim, developer focused on creating visually appealing, intuitive interfaces that
+                        enhance
+                        usability and deliver meaningful experiences.</p>
+                </div>
+
+                <div class="about-grid">
+                    <!-- Block 1 -->
+                    <div class="about-card">
+                        <div class="about-card-icon"><i class="fa-solid fa-pen-nib"></i></div>
+                        <h3>Design & UX</h3>
+                        <p>Passionate about turning ideas into interfaces that attract the eye and simplify user
+                            interaction.</p>
+                    </div>
+
+                    <!-- Block 2 -->
+                    <div class="about-card">
+                        <div class="about-card-icon"><i class="fa-solid fa-list-check"></i></div>
+                        <h3>Structured Work</h3>
+                        <p>Organized and detail-oriented; break problems into steps and solve them progressively for
+                            clarity.</p>
+                    </div>
+
+                    <!-- Block 3 -->
+                    <div class="about-card">
+                        <div class="about-card-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h3>Growth & Purpose</h3>
+                        <p>Developing Angular skills in Digital Egypt Pioneers Initiative (DEPI) while building digital
+                            solutions for real-world social, healthcare,
+                            or sports challenges.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Education Section (Center Card) -->
     <section id="education" class="section">
+        <i class="fa-solid fa-graduation-cap bg-icon"></i>
         <div class="container">
             <h2 class="section-title">Education</h2>
             <div class="centered-card-container reveal">
                 <div class="info-card">
-                    <div class="date">2019 – 2023</div>
+                    <div class="card-header-meta">
+                        <div class="date">2019 – 2023</div>
+                        <span class="gpa-badge">GPA: 2.68</span>
+                    </div>
                     <h3>Bachelor's in Computer Science & IT</h3>
                     <h4>Egyptian E-Learning University, Assiut</h4>
                     <p>Graduated with a focus on Information Technology fundamentals and software development concepts.
                     </p>
+                    <div class="project-info">
+                        <div class="project-info-header">
+                            <span class="project-label">Graduation Project</span>
+                            <span class="grade-badge">Excellent (A)</span>
+                        </div>
+                        <div class="project-title">"Stock Market Forecasting using Machine Learning techniques"</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -102,36 +153,65 @@
         <div class="container">
             <h2 class="section-title">Skills</h2>
 
-            <h3 class="subsection-title" style="text-align: center; color: var(--text-color); margin-bottom: 2rem;">Core
-                Skills</h3>
-            <div class="skills-grid">
-                <div class="skill-card reveal">
-                    <div class="skill-icon"><i class="fa-brands fa-html5"></i></div>
-                    <h3>HTML</h3>
+            <div class="skills-categories-grid">
+                <!-- Front-End Skills -->
+                <div class="skill-category-card reveal">
+                    <div class="category-header">
+                        <i class="fa-solid fa-code category-icon"></i>
+                        <h3>Front-End Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML</span>
+                        <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                        <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript</span>
+                        <span class="skill-tag"><i class="fa-brands fa-bootstrap"></i> Bootstrap</span>
+                    </div>
                 </div>
-                <div class="skill-card reveal">
-                    <div class="skill-icon"><i class="fa-brands fa-css3-alt"></i></div>
-                    <h3>CSS</h3>
-                </div>
-                <div class="skill-card reveal">
-                    <div class="skill-icon"><i class="fa-brands fa-js"></i></div>
-                    <h3>JavaScript</h3>
-                </div>
-                <div class="skill-card reveal">
-                    <div class="skill-icon"><i class="fa-brands fa-bootstrap"></i></div>
-                    <h3>Bootstrap</h3>
-                </div>
-            </div>
 
-            <h3 class="subsection-title"
-                style="text-align: center; color: var(--text-color); margin-top: 3rem; margin-bottom: 2rem;">Additional
-                Skills</h3>
-            <div class="skills-tags reveal">
-                <span class="skill-tag">Photoshop</span>
-                <span class="skill-tag">Microsoft Office</span>
-                <span class="skill-tag">Java</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">C++</span>
+                <!-- Development Tools -->
+                <div class="skill-category-card reveal">
+                    <div class="category-header">
+                        <i class="fa-solid fa-screwdriver-wrench category-icon"></i>
+                        <h3>Development Tools</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-solid fa-code"></i> Visual Studio</span>
+                        <span class="skill-tag"><i class="fa-brands fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fa-solid fa-rocket"></i> Antigravity</span>
+                        <span class="skill-tag"><i class="fa-solid fa-mug-hot"></i> NetBeans</span>
+                        <span class="skill-tag"><i class="fa-solid fa-cube"></i> Code::Blocks</span>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skill-category-card reveal">
+                    <div class="category-header">
+                        <i class="fa-solid fa-brain category-icon"></i>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag">Working Under Pressure</span>
+                        <span class="skill-tag">Problem-Solving</span>
+                        <span class="skill-tag">Teamwork & Communication</span>
+                        <span class="skill-tag">Adaptability & Learning</span>
+                        <span class="skill-tag">Quality Focus</span>
+                    </div>
+                </div>
+
+                <!-- Additional Skills -->
+                <div class="skill-category-card reveal">
+                    <div class="category-header">
+                        <i class="fa-solid fa-cubes category-icon"></i>
+                        <h3>Additional Skills</h3>
+                    </div>
+                    <div class="skills-list">
+                        <span class="skill-tag"><i class="fa-solid fa-image"></i> Photoshop</span>
+                        <span class="skill-tag"><i class="fa-solid fa-file-lines"></i> Microsoft Office</span>
+                        <span class="skill-tag"><i class="fa-brands fa-java"></i> Java</span>
+                        <span class="skill-tag"><i class="fa-brands fa-python"></i> Python</span>
+                        <span class="skill-tag"><i class="fa-solid fa-c"></i> C++</span>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -143,10 +223,37 @@
             <div class="centered-card-container reveal">
                 <div class="info-card">
                     <div class="date">11/2025 – Present</div>
-                    <h3>Front-End Web Development Trainee</h3>
+                    <h3>Front-End Web Trainee - Angular</h3>
                     <h4>Ministry of Communications and Information Technology (MCIT)</h4>
-                    <p>Specializing in Angular. Developing modern web applications, focusing on responsive design,
-                        component-based architecture, and best coding practices.</p>
+                    <h5 class="experience-subtitle">Digital Egypt Pioneers Initiative (DEPI)</h5>
+                    <div class="car-flow">
+                        <div class="car-stage car-challenge">
+                            <div class="car-header">
+                                <i class="fa-solid fa-circle-question car-icon"></i>
+                                <span class="car-label">Challenge</span>
+                            </div>
+                            <div class="car-content">Design and implement modern, interactive web applications for the
+                                Digital Egypt Pioneers Initiative, ensuring dynamic functionality and responsive design.
+                            </div>
+                        </div>
+                        <div class="car-stage car-action">
+                            <div class="car-header">
+                                <i class="fa-solid fa-laptop-code car-icon"></i>
+                                <span class="car-label">Action</span>
+                            </div>
+                            <div class="car-content">Built responsive, component-based websites using Angular and
+                                Bootstrap, focusing on clean architecture and seamless user interactions.</div>
+                        </div>
+                        <div class="car-stage car-result">
+                            <div class="car-header">
+                                <i class="fa-solid fa-circle-check car-icon"></i>
+                                <span class="car-label">Result</span>
+                            </div>
+                            <div class="car-content">Delivered fully functional, production-ready web interfaces that
+                                are dynamic, responsive, and maintainable, enhancing user experience and project
+                                efficiency.</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -166,17 +273,33 @@
                     <h3>Landing Pages</h3>
                     <p>Creating high-converting, visually stunning landing pages to showcase and sell products
                         effectively.</p>
+                    <div class="service-skills">
+                        <span class="service-skill-tag">HTML</span>
+                        <span class="service-skill-tag">CSS</span>
+                        <span class="service-skill-tag">JavaScript</span>
+                        <span class="service-skill-tag">Photoshop</span>
+                    </div>
                 </div>
                 <div class="service-card reveal">
                     <div class="service-icon"><i class="fa-solid fa-code"></i></div>
                     <h3>Code Maintenance</h3>
                     <p>Updating, fixing, and optimizing HTML, CSS, and JavaScript code for existing websites to improve
                         performance.</p>
+                    <div class="service-skills">
+                        <span class="service-skill-tag">HTML</span>
+                        <span class="service-skill-tag">CSS</span>
+                        <span class="service-skill-tag">JavaScript</span>
+                    </div>
                 </div>
                 <div class="service-card reveal">
                     <div class="service-icon"><i class="fa-solid fa-mobile-screen"></i></div>
                     <h3>Responsive Design</h3>
                     <p>Ensuring websites look perfect on all devices, from desktops to mobile phones and tablets.</p>
+                    <div class="service-skills">
+                        <span class="service-skill-tag">HTML</span>
+                        <span class="service-skill-tag">CSS</span>
+                        <span class="service-skill-tag">Bootstrap</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -192,16 +315,58 @@
                     <div class="project-image">
                         <img src="assets/img/MALABAK-website.png" alt="MAL3BAK Website">
                         <div class="project-overlay">
-                            <a href="#" class="btn-icon" aria-label="View Project"><i class="fa-solid fa-link"></i></a>
+                            <a href="https://ziadabdulkarim.github.io/Your-playground-site/" class="btn-icon"
+                                target="_blank" aria-label="View Project"><i class="fa-solid fa-link"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
+                        <span class="project-context">Personal project</span>
                         <h3>MAL3BAK Website</h3>
                         <p>Fully integrated online booking platform using HTML, CSS, and basic JavaScript. Features
                             schedule display and booking management.</p>
+
                         <div class="project-tags">
                             <span>HTML</span><span>CSS</span><span>JS</span>
                         </div>
+                        <div class="project-actions">
+                            <button class="btn btn-view-features modal-trigger" data-project="mal3bak">
+                                View Features <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+
+                        <!-- Data for Modal -->
+                        <template id="project-mal3bak-data">
+                            <div class="modal-project-header">
+                                <span class="project-context">Personal project</span>
+                                <h3>MAL3BAK Website</h3>
+                            </div>
+                            <div class="car-flow">
+                                <div class="car-stage car-challenge">
+                                    <div class="car-header">
+                                        <i class="fa-solid fa-circle-question car-icon"></i>
+                                        <span class="car-label">Challenge</span>
+                                    </div>
+                                    <div class="car-content">Lack of localized online booking for sports facilities.
+                                    </div>
+                                </div>
+                                <div class="car-stage car-action">
+                                    <div class="car-header">
+                                        <i class="fa-solid fa-laptop-code car-icon"></i>
+                                        <span class="car-label">Action</span>
+                                    </div>
+                                    <div class="car-content">Developed an integrated booking system using HTML, CSS, and
+                                        JS with a dynamic schedule display.</div>
+                                </div>
+                                <div class="car-stage car-result">
+                                    <div class="car-header">
+                                        <i class="fa-solid fa-circle-check car-icon"></i>
+                                        <span class="car-label">Result</span>
+                                    </div>
+                                    <div class="car-content">Simplified the reservation process for both users and
+                                        sports facility managers.</div>
+                                </div>
+                            </div>
+                        </template>
                     </div>
                 </div>
 
@@ -210,16 +375,62 @@
                     <div class="project-image">
                         <img src="assets/img/Vital-Pharmacy.png" alt="Vital Pharmacy Website">
                         <div class="project-overlay">
-                            <a href="#" class="btn-icon" aria-label="View Project"><i class="fa-solid fa-link"></i></a>
+                            <a href="https://ziadabdulkarim.github.io/Pharmacy-Website/" class="btn-icon"
+                                target="_blank" aria-label="View Project"><i class="fa-solid fa-link"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
+                        <span class="project-context">Self-training project</span>
                         <h3>Vital Pharmacy Website</h3>
-                        <p>Fully responsive landing page using advanced CSS3 techniques (neomorphism, glass, parallax)
+                        <p>Fully responsive landing page using advanced CSS3 techniques (neomorphism, glass,
+                            parallax)
                             for an interactive experience.</p>
+
                         <div class="project-tags">
-                            <span>CSS3</span><span>Parallax</span><span>Glass</span>
+                            <span>HTML</span><span>CSS3</span><span>Parallax</span><span>Glass</span>
                         </div>
+                        <div class="project-actions">
+                            <button class="btn btn-view-features modal-trigger" data-project="pharmacy">
+                                View Features <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+
+                        <!-- Data for Modal -->
+                        <template id="project-pharmacy-data">
+                            <div class="modal-project-header">
+                                <span class="project-context">Self-training project</span>
+                                <h3>Vital Pharmacy Website</h3>
+                            </div>
+                            <div class="car-flow">
+                                <div class="car-stage car-challenge">
+                                    <div class="car-header">
+                                        <i class="fa-solid fa-circle-question car-icon"></i>
+                                        <span class="car-label">Challenge</span>
+                                    </div>
+                                    <div class="car-content">Mastering advanced CSS techniques and designing a
+                                        high-impact
+                                        visual interface for my portfolio.</div>
+                                </div>
+                                <div class="car-stage car-action">
+                                    <div class="car-header">
+                                        <i class="fa-solid fa-laptop-code car-icon"></i>
+                                        <span class="car-label">Action</span>
+                                    </div>
+                                    <div class="car-content">Applied multi-layer parallax, glassmorphism, and
+                                        neomorphic UI
+                                        components to create an interactive experience.</div>
+                                </div>
+                                <div class="car-stage car-result">
+                                    <div class="car-header">
+                                        <i class="fa-solid fa-circle-check car-icon"></i>
+                                        <span class="car-label">Result</span>
+                                    </div>
+                                    <div class="car-content">Created a high-impact demo showing mastery of modern
+                                        front-end
+                                        aesthetics and interactive design.</div>
+                                </div>
+                            </div>
+                        </template>
                     </div>
                 </div>
 
@@ -228,15 +439,237 @@
                     <div class="project-image">
                         <img src="assets/img/CV-site.png" alt="Personal Portfolio Website">
                         <div class="project-overlay">
-                            <a href="#" class="btn-icon" aria-label="View Project"><i class="fa-solid fa-link"></i></a>
+                            <a href="https://ziadabdulkarim.github.io/CV-site/" class="btn-icon" target="_blank"
+                                aria-label="View Project"><i class="fa-solid fa-link"></i></a>
                         </div>
                     </div>
                     <div class="project-info">
+                        <span class="project-context">First HTML/CSS project</span>
                         <h3>Personal Portfolio</h3>
-                        <p>Modern one-page resume website. Built with HTML and CSS for elegant presentation, showcasing
+                        <p>Modern one-page resume website. Built with HTML and CSS for elegant presentation,
+                            showcasing
                             skills and experience.</p>
+
                         <div class="project-tags">
                             <span>HTML</span><span>CSS</span><span>Design</span>
+                        </div>
+                        <div class="project-actions">
+                            <button class="btn btn-view-features modal-trigger" data-project="portfolio">
+                                View Features <i class="fa-solid fa-expand"></i>
+                            </button>
+                        </div>
+
+                        <!-- Data for Modal -->
+                        <template id="project-portfolio-data">
+                            <div class="modal-project-header">
+                                <span class="project-context">First HTML/CSS project</span>
+                                <h3>Personal Portfolio</h3>
+                            </div>
+                            <div class="car-flow">
+                                <div class="car-stage car-challenge">
+                                    <div class="car-header">
+                                        <i class="fa-solid fa-circle-question car-icon"></i>
+                                        <span class="car-label">Challenge</span>
+                                    </div>
+                                    <div class="car-content">Transitioning from theoretical learning to building a
+                                        complete,
+                                        high-quality professional brand online.</div>
+                                </div>
+                                <div class="car-stage car-action">
+                                    <div class="car-header">
+                                        <i class="fa-solid fa-laptop-code car-icon"></i>
+                                        <span class="car-label">Action</span>
+                                    </div>
+                                    <div class="car-content">Designed a clean architecture with a focus on semantic
+                                        HTML and
+                                        refined responsive CSS layouts.</div>
+                                </div>
+                                <div class="car-stage car-result">
+                                    <div class="car-header">
+                                        <i class="fa-solid fa-circle-check car-icon"></i>
+                                        <span class="car-label">Result</span>
+                                    </div>
+                                    <div class="car-content">Successfully launched a professional online presence
+                                        demonstrating
+                                        core front-end skills and design sense.</div>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="section">
+        <i class="fa-solid fa-award bg-icon"></i>
+        <div class="container">
+            <h2 class="section-title">Achievements</h2>
+            <div class="achievements-grid">
+                <!-- Achievement 1 -->
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon"><i class="fa-solid fa-user-graduate"></i></div>
+                    <h3>University Degree Certificate</h3>
+                    <div class="achievement-subtitle">Egyptian E-Learning University <span class="date">2019 –
+                            2023</span></div>
+                    <div class="car-flow car-flow-compact">
+                        <div class="car-stage car-challenge">
+                            <div class="car-header">
+                                <i class="fa-solid fa-circle-question car-icon"></i>
+                                <span class="car-label">Challenge</span>
+                            </div>
+                            <div class="car-content">Complete a formal education in computer science and IT.</div>
+                        </div>
+                        <div class="car-stage car-action">
+                            <div class="car-header">
+                                <i class="fa-solid fa-laptop-code car-icon"></i>
+                                <span class="car-label">Action</span>
+                            </div>
+                            <div class="car-content">Earned Bachelor’s degree in Computer Science & Information
+                                Technology.</div>
+                        </div>
+                        <div class="car-stage car-result">
+                            <div class="car-header">
+                                <i class="fa-solid fa-circle-check car-icon"></i>
+                                <span class="car-label">Result</span>
+                            </div>
+                            <div class="car-content">Developed strong technical foundations and formal recognition of
+                                academic achievements.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement 2 -->
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Front-End Web Trainee - Angular</h3>
+                    <div class="achievement-subtitle">Digital Egypt Pioneers Initiative (DEPI) <span
+                            class="date">11/2025 – Present</span></div>
+                    <div class="car-flow car-flow-compact">
+                        <div class="car-stage car-challenge">
+                            <div class="car-header">
+                                <i class="fa-solid fa-circle-question car-icon"></i>
+                                <span class="car-label">Challenge</span>
+                            </div>
+                            <div class="car-content">Improve front-end skills and gain practical experience with
+                                Angular.</div>
+                        </div>
+                        <div class="car-stage car-action">
+                            <div class="car-header">
+                                <i class="fa-solid fa-laptop-code car-icon"></i>
+                                <span class="car-label">Action</span>
+                            </div>
+                            <div class="car-content">Enrolled in the Digital Egypt Pioneers Initiative to master Angular
+                                and develop advanced front-end solutions.</div>
+                        </div>
+                        <div class="car-stage car-result">
+                            <div class="car-header">
+                                <i class="fa-solid fa-circle-check car-icon"></i>
+                                <span class="car-label">Result</span>
+                            </div>
+                            <div class="car-content">Gained hands-on experience and enhanced ability to build modern,
+                                responsive web applications.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement 3 -->
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon"><i class="fa-brands fa-github"></i></div>
+                    <h3>Open Source Projects on GitHub</h3>
+                    <div class="achievement-subtitle"><span class="date">+7 projects</span></div>
+                    <div class="car-flow car-flow-compact">
+                        <div class="car-stage car-challenge">
+                            <div class="car-header">
+                                <i class="fa-solid fa-circle-question car-icon"></i>
+                                <span class="car-label">Challenge</span>
+                            </div>
+                            <div class="car-content">Share skills and contribute to the developer community.</div>
+                        </div>
+                        <div class="car-stage car-action">
+                            <div class="car-header">
+                                <i class="fa-solid fa-laptop-code car-icon"></i>
+                                <span class="car-label">Action</span>
+                            </div>
+                            <div class="car-content">Published 7 open-source projects on GitHub demonstrating front-end
+                                development and coding practices.</div>
+                        </div>
+                        <div class="car-stage car-result">
+                            <div class="car-header">
+                                <i class="fa-solid fa-circle-check car-icon"></i>
+                                <span class="car-label">Result</span>
+                            </div>
+                            <div class="car-content">Built a public portfolio showcasing practical experience and coding
+                                proficiency.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement 4 -->
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon"><i class="fa-solid fa-database"></i></div>
+                    <h3>Charity Database Project</h3>
+                    <div class="achievement-subtitle">Ahl Abnub Charity Association <span class="date">2021 –
+                            Present</span></div>
+                    <div class="car-flow car-flow-compact">
+                        <div class="car-stage car-challenge">
+                            <div class="car-header">
+                                <i class="fa-solid fa-circle-question car-icon"></i>
+                                <span class="car-label">Challenge</span>
+                            </div>
+                            <div class="car-content">Manual record-keeping for a charity was inconsistent, duplicated,
+                                and incomplete.</div>
+                        </div>
+                        <div class="car-stage car-action">
+                            <div class="car-header">
+                                <i class="fa-solid fa-laptop-code car-icon"></i>
+                                <span class="car-label">Action</span>
+                            </div>
+                            <div class="car-content">Designed and implemented a digital database to track families,
+                                ages, number of members, and missing needs.</div>
+                        </div>
+                        <div class="car-stage car-result">
+                            <div class="car-header">
+                                <i class="fa-solid fa-circle-check car-icon"></i>
+                                <span class="car-label">Result</span>
+                            </div>
+                            <div class="car-content">Streamlined data management, reduced errors, and enabled accurate
+                                reporting and decision-making.</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Achievement 5 -->
+                <div class="achievement-card reveal">
+                    <div class="achievement-icon"><i class="fa-solid fa-certificate"></i></div>
+                    <h3>Photoshop & Microsoft Office Certificate</h3>
+                    <div class="achievement-subtitle">Egyptian Armed Forces <span class="date">Completed Sep 2025</span>
+                    </div>
+                    <div class="car-flow car-flow-compact">
+                        <div class="car-stage car-challenge">
+                            <div class="car-header">
+                                <i class="fa-solid fa-circle-question car-icon"></i>
+                                <span class="car-label">Challenge</span>
+                            </div>
+                            <div class="car-content">Needed to enhance design and productivity skills during military
+                                service.</div>
+                        </div>
+                        <div class="car-stage car-action">
+                            <div class="car-header">
+                                <i class="fa-solid fa-laptop-code car-icon"></i>
+                                <span class="car-label">Action</span>
+                            </div>
+                            <div class="car-content">Completed official training and certification programs in Photoshop
+                                and Microsoft Office.</div>
+                        </div>
+                        <div class="car-stage car-result">
+                            <div class="car-header">
+                                <i class="fa-solid fa-circle-check car-icon"></i>
+                                <span class="car-label">Result</span>
+                            </div>
+                            <div class="car-content">Gained practical knowledge and certified proficiency to improve
+                                project efficiency and design quality.</div>
                         </div>
                     </div>
                 </div>
@@ -256,14 +689,15 @@
                         <div class="icon"><i class="fa-solid fa-phone"></i></div>
                         <div class="details">
                             <h3>Phone</h3>
-                            <p>+2011 5099 4841</p>
+                            <p><a href="https://wa.me/201150994841" target="_blank" rel="noopener noreferrer">+2011 5099
+                                    4841</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="icon"><i class="fa-solid fa-envelope"></i></div>
                         <div class="details">
                             <h3>Email</h3>
-                            <p>ziad.abdulkarimzakria@gmail.com</p>
+                            <p><a href="mailto:ziad.abdulkarimzakria@gmail.com">ziad.abdulkarimzakria@gmail.com</a></p>
                         </div>
                     </div>
                     <div class="contact-item">
@@ -310,8 +744,19 @@
         </div>
     </footer>
 
+    <!-- Project Details Modal -->
+    <div id="project-modal" class="modal-overlay">
+        <div class="modal-container">
+            <button class="modal-close" aria-label="Close Modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="modal-content" class="modal-content">
+                <!-- Content will be injected here via JavaScript -->
+            </div>
+        </div>
+    </div>
+
     <script src="script.js"></script>
 </body>
-
 
 </html>
