@@ -66,3 +66,49 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+// Project Modal Logic
+const modal = document.getElementById('project-modal');
+const modalContent = document.getElementById('modal-content');
+const closeModalBtn = document.querySelector('.modal-close');
+const modalTriggers = document.querySelectorAll('.modal-trigger');
+
+const openModal = (projectId) => {
+    const template = document.getElementById(`project-${projectId}-data`);
+    if (template) {
+        // Clone the template content
+        const content = template.content.cloneNode(true);
+        modalContent.innerHTML = ''; // Clear previous content
+        modalContent.appendChild(content);
+
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden'; // Lock scrolling
+    }
+};
+
+const closeModal = () => {
+    modal.classList.remove('active');
+    document.body.style.overflow = ''; // Unlock scrolling
+};
+
+modalTriggers.forEach(trigger => {
+    trigger.addEventListener('click', () => {
+        const projectId = trigger.getAttribute('data-project');
+        openModal(projectId);
+    });
+});
+
+closeModalBtn.addEventListener('click', closeModal);
+
+// Close on outside click
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        closeModal();
+    }
+});
+
+// Close on Escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && modal.classList.contains('active')) {
+        closeModal();
+    }
+});
