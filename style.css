@@ -1127,9 +1127,32 @@ img {
 }
 
 @media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2.5rem;
+    }
+
     .achievements-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+.project-duration {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    font-size: 0.8rem;
+    color: var(--secondary-color);
+    margin-bottom: 0.8rem;
+    opacity: 0.9;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.project-duration i {
+    color: var(--primary-color);
+    font-size: 0.85rem;
 }
 
 .achievement-card {
@@ -1379,6 +1402,29 @@ img {
     color: var(--secondary-color);
     position: relative;
     z-index: 10;
+}
+
+.footer-cta {
+    margin-bottom: 3rem;
+    padding: 0 1rem;
+}
+
+.footer-cta-title {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(to right, #fff, #bcebd9);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.footer-cta-subtitle {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 .footer-socials {
