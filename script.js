@@ -112,3 +112,48 @@ document.addEventListener('keydown', (e) => {
         closeModal();
     }
 });
+// Contact Form Submission
+const contactForm = document.getElementById('contact-form');
+const submitBtn = document.getElementById('submit-btn');
+const successMsg = document.getElementById('contact-success');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // 1. Loading State
+        submitBtn.classList.add('btn-loading');
+        submitBtn.querySelector('.btn-text').textContent = 'Sending...';
+
+        const formData = new FormData(contactForm);
+
+        try {
+            const response = await fetch(contactForm.action, {
+                method: 'POST',
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            });
+
+            if (response.ok) {
+                // 2. Success State
+                contactForm.reset();
+                submitBtn.style.display = 'none'; // Hide button after success
+                successMsg.style.display = 'flex'; // Show success message
+            } else {
+                const data = await response.json();
+                throw new Error(data.error || 'Submission failed');
+            }
+        } catch (error) {
+            console.error('Submission error:', error);
+            alert('Something went wrong. Please try again later.');
+        } finally {
+            // 3. Reset Button State (only if not hidden by success)
+            if (submitBtn.style.display !== 'none') {
+                submitBtn.classList.remove('btn-loading');
+                submitBtn.querySelector('.btn-text').textContent = 'Send Message';
+            }
+        }
+    });
+}
