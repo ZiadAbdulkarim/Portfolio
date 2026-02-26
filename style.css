@@ -1492,8 +1492,14 @@ img {
 
     .projects-grid,
     .services-grid,
+    .achievements-grid,
     .about-grid {
         grid-template-columns: 1fr;
+    }
+
+    .centered-card-container {
+        flex-direction: column;
+        align-items: center;
     }
 
     .about-main-text {
@@ -1502,7 +1508,16 @@ img {
 
     .contact-container {
         grid-template-columns: 1fr;
-        gap: 2rem;
+        gap: 1.5rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    .contact-item {
+        margin-bottom: 1.5rem;
+        padding: 1.2rem;
     }
 
     .skills-categories-grid {
